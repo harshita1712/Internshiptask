@@ -1,0 +1,254 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --main-color:  #7854F7;
+    --color-1:#272D4E;
+    --color-2:#94A2B3;
+    --color-3: #ffffff;
+    --bg-dark:#2b2c2f;
+     --shadow-black-100: 0 5px 15px rgba(0,0,0,0.2);
+     --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+     --black-900: #000000;
+     --black-400: #555555;
+     --black-100: #f7f7f7ee;
+     --black-000: #ffffff;
+     --black-alpha-100: rgba(0,0,0,0.05);
+ 
+ } 
+
+*{
+    margin: 0;
+    padding: 0;
+    outline:none!important;
+   
+}
+
+body{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
+
+.section-padding{
+   
+    padding-top: 40px;
+    margin-bottom: 30px;
+   
+}
+
+
+/* Navbar CSS */
+.navbar{
+    background-color: transparent;
+    padding: 20px;
+    transition: all 0.5 ease;
+
+}
+
+.navbar > .container{
+    padding: 5px 0;
+}
+.navbar.navbar-shrink{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-3);
+    padding: 10px;
+}
+
+.navbar .nav-item{
+    margin-left: 40px;
+    
+}
+.navbar .nav-item .nav-link{
+    font-size: 16px;
+    color:#ffffff;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 5px 0;
+    position: relative ;
+}
+
+.navbar .nav-item .nav-link::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    height: 1px;
+    background-color: #272D4E;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before{
+    transform: scale(1);
+    
+}
+
+
+.wrapper{
+    min-height: 100%;
+    padding: 100px 0;
+    background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+    position: relative;
+    z-index:1;
+}
+.wave{
+  position: absolute;
+   width: 800px;
+   height: 300px;
+   left: 41.84%;
+   right: -51.88%;
+   top: -5.72%;
+   bottom: 81.76%;
+   z-index: -1;
+}
+
+
+.home-text h1{ 
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 75px;
+  color: var(--color-1);
+  font-family:'Circular Std Book', sans-serif;
+}
+.home-text p{
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: var(--color-2);
+}
+.home-img{
+    position: relative;
+}
+.home-img img{
+    margin-top: 20px;
+    width: 800px;
+}
+
+
+
+.home .home-btn{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.btn-1{
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: var(--color-3);
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5 ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 600;
+}
+.btn-1:focus{
+    box-shadow: var(--shadow-black-300);
+}
+
+.btn-1:hover{
+    color: var(--main-color);
+    background-color: #f3f6fa;
+}
+
+.btn-2{
+    background-color: var(--main-color);
+    padding: 8px 8px 5px 8px;
+    border: none;
+    color: var(--color-3);
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5 ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+}
+.btn-2:focus{
+    box-shadow: var(--shadow-black-300);
+}
+
+.btn-2:hover{
+    color: var(--main-color);
+    background-color: #f3f6fa;
+}
+
+.section-title h2{
+    font-family: 'Circular Std Book', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 70px;
+/* or 127% */
+
+text-align: center;
+
+color: #272D4E;
+}
+
+.content-img{
+    position: relative;
+}
+.content-img img{
+    margin-top: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.content-text h4{
+    font-family: 'Circular Std Book', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 40px;
+    /* or 127% */
+    
+    text-align: left;
+    
+    color: #272D4E;
+}
+
+.content-text p{
+   
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+text-align: left;
+/* or 167% */
+
+
+color: #94A2B3;
+
+}
+
+.content-text a{
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+text-decoration: none;
+
+color: #299EF3;
+}
+
+.movedown{
+    margin-top: 25px;
+}
+
+.movedown1{
+    margin-top: 65px;
+}
